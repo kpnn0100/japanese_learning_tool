@@ -1,10 +1,12 @@
 import random
-
+import sys
+import os
 # ANSI escape codes for colored output
 GREEN = '\033[92m'
 RED = '\033[91m'
 RESET = '\033[0m'
-
+def get_script_directory():
+    return os.path.dirname(os.path.realpath(sys.argv[0]))
 def load_hiragana(file_path):
     hiragana_dict = {}
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -14,7 +16,8 @@ def load_hiragana(file_path):
     return hiragana_dict
 
 def main():
-    hiragana_file = "source.txt"
+    script_dir = get_script_directory()
+    hiragana_file = os.path.join(script_dir, "map.txt")
     hiragana_dict = load_hiragana(hiragana_file)
     print("\n--- Hiragana Learning ---")
     latin_list = list(hiragana_dict.keys())
