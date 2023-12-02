@@ -8,7 +8,11 @@ def display_menu():
 
 def execute_tool(tool_number):
     if tool_number == 1:
-        os.system("python mapper/mapper.py")
+        # Get the directory of the current script
+        script_dir = os.path.dirname(__file__)
+        relative_script_path = 'mapper/mapper.py'
+        absolute_script_path = os.path.join(script_dir, relative_script_path)
+        os.system(f"python {absolute_script_path}")
     elif tool_number == 2:
         # Add implementation for other tool
         print("Other tool is not implemented yet.")
