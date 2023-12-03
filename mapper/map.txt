@@ -18,3 +18,13 @@ chi ち
 tsu つ
 te て
 to と
+na な
+ni に
+nu ぬ
+ne ね
+no の
+ha は
+hi ひ
+fu ふ
+he へ
+ho ほ
