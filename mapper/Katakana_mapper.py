@@ -13,33 +13,33 @@ def get_script_directory():
     script_path = os.path.dirname(__file__)
     return script_path
 
-def load_hiragana(file_path):
-    hiragana_dict = {}
+def load_Katakana(file_path):
+    Katakana_dict = {}
     with open(file_path, 'r', encoding='utf-8') as file:
         for line in file:
-            latin, hiragana = line.strip().split()
-            hiragana_dict[latin] = hiragana
-    return hiragana_dict
+            latin, Katakana = line.strip().split()
+            Katakana_dict[latin] = Katakana
+    return Katakana_dict
 
-def generate_random_sequence(hiragana_dict, length):
-    latin_sequence = random.sample(list(hiragana_dict.keys()), length)
-    hiragana_sequence = [hiragana_dict[latin] for latin in latin_sequence]
-    return latin_sequence, hiragana_sequence
+def generate_random_sequence(Katakana_dict, length):
+    latin_sequence = random.sample(list(Katakana_dict.keys()), length)
+    Katakana_sequence = [Katakana_dict[latin] for latin in latin_sequence]
+    return latin_sequence, Katakana_sequence
 
 def main():
     script_dir = get_script_directory()
-    hiragana_file = os.path.join(script_dir, "map.txt")
-    hiragana_dict = load_hiragana(hiragana_file)
-    print("\n--- Hiragana Learning ---")
+    Katakana_file = os.path.join(script_dir, "katakana_current_learning.txt")
+    Katakana_dict = load_Katakana(Katakana_file)
+    print("\n--- Katakana Learning ---")
 
     size = 10
     time_list = []
 
     while True:
-        latin_sequence, hiragana_sequence = generate_random_sequence(hiragana_dict, size)
+        latin_sequence, Katakana_sequence = generate_random_sequence(Katakana_dict, size)
         start_time = time.time()
 
-        user_input = input(f"Latin for {' '.join(hiragana_sequence)}\n       -> ")
+        user_input = input(f"Latin for {' '.join(Katakana_sequence)}\n       -> ")
         user_input_list = user_input.split()  # Split the input into a list of Latin characters
         correct = 0
         for i, latin in enumerate(latin_sequence):

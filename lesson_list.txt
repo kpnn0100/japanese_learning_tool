@@ -1,2 +1,2 @@
-Character Mapper : mapper/mapper.py
-Multiple Character Mapper : mapper/mappermulti.py
+Hiragana Mapper : mapper/mappermulti.py
+Katakana Mapper : mapper/Katakana_mapper.py
