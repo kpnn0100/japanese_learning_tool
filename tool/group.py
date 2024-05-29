@@ -1,11 +1,15 @@
 import csv
 import re
 import pandas as pd
+import os
 
-input_file = "/home/namdln/learning/japanese_learning_tool/word/n5_words.txt"
-output_file = "/home/namdln/learning/japanese_learning_tool/word/n5_words.csv"
 
-with open(input_file, "r") as file:
+folder_path = os.path.dirname(os.path.abspath(__file__))
+file_name = "n5_words.txt"
+input_file = os.path.join(folder_path, file_name)
+output_file = "n5_words.csv"
+
+with open(input_file, "r", encoding="utf-8") as file:
     lines = file.readlines()
 
 dict = {
@@ -47,11 +51,8 @@ for line in lines:
         "romaji": romaji,
         "meaning": meaning
     }
-    df = df._append(data, ignore_index = True)
+    df = df.append(data, ignore_index=True)
 
-with open(output_file, "w", newline="") as file:
-    writer = csv.writer(file)
-    writer.writerow(["kanji", "furigana", "romaji", "meaning"])
-    writer.writerows(data)
+df.to_csv(output_file, index=False)
 
 print("Conversion to CSV format is complete.")
