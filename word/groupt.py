@@ -49,9 +49,6 @@ for line in lines:
     }
     df = df._append(data, ignore_index = True)
 
-with open(output_file, "w", newline="") as file:
-    writer = csv.writer(file)
-    writer.writerow(["kanji", "furigana", "romaji", "meaning"])
-    writer.writerows(data)
+df.to_csv(output_file, index=False)
 
 print("Conversion to CSV format is complete.")
