@@ -3,7 +3,7 @@ import os
 import random
 from Config import *
 
-today_word_list = getTodayWords(learning_rate)
+today_word_list = getOldWords(learning_rate)
 all_word_list = getShuffledKanjiDataFrame()
 
 
