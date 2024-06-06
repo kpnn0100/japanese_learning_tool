@@ -59,7 +59,7 @@ def getOldWords(learning_rate):
         end = learning_rate
     print (f"start: {start}, end: {end}")
     selected_words = getWordRange(start, end)
-    print(selected_words)
+    print(selected_words.to_string(index=True))
     return selected_words
     
 parser = argparse.ArgumentParser()

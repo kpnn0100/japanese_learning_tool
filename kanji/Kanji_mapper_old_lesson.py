@@ -14,7 +14,7 @@ while True:
     noise_word = all_word_list.copy()
     #remove row from noise_word
     noise_word = noise_word.drop(row.index)
-    mode = random.randint(0, 2)
+    mode = random.randint(2, 2)
     #if the word don't have kanji (kanji = " ") then mode should be minus
     if row['kanji'].values[0] == " ":
         mode = -mode-1
