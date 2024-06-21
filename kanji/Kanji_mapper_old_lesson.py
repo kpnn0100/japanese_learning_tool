@@ -3,10 +3,14 @@ import os
 import random
 from Config import *
 
-today_word_list = getOldWords(learning_rate)
+depth = 0
+depth = int(input("Enter the depth of the old lesson: "))
+today_word_list = []
+if depth == 0:
+    today_word_list = getOldWords(learning_rate)
+else:
+    today_word_list = getOldWordsWithDepth(learning_rate, depth)
 all_word_list = getShuffledKanjiDataFrame()
-
-
 # get random row form today_word_list
 while True:
     print("---------------------")
@@ -15,7 +19,7 @@ while True:
     #remove row from noise_word
     noise_word = noise_word.drop(row.index)
     # mode = random.randint(0, 2)
-    mode = random.randint(2, 3)
+    mode = random.randint(2, 2)
     #if the word don't have kanji (kanji = " ") then mode should be minus
     if row['kanji'].values[0] == " ":
         mode = -mode-1
