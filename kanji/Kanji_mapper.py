@@ -15,9 +15,6 @@ while True:
     #remove row from noise_word
     noise_word = noise_word.drop(row.index)
     mode = random.randint(0, 2)
-    #if the word don't have kanji (kanji = " ") then mode should be minus
-    if row['kanji'].values[0] == " ":
-        mode = -mode-1
     # switch case for mode
     if mode == -2:
         print(f'which is the furigana of this word: \n')
