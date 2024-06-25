@@ -16,42 +16,6 @@ while True:
     noise_word = noise_word.drop(row.index)
     mode = random.randint(0, 2)
     # switch case for mode
-    if mode == -2:
-        print(f'which is the furigana of this word: \n')
-        print(row['meaning'].values[0])
-        print("Choose the correct kanji:")
-        choices = noise_word.sample(n=number_of_noise_word)['furigana'].tolist()
-        choices.append(row['furigana'].values[0])
-        random.shuffle(choices)
-        for i, choice in enumerate(choices):
-            print(f"{i+1}. {choice}")
-        user_input = input("Enter the number of the correct kanji: ")
-        while not user_input.isdigit():
-            print("Invalid input. Please enter a number.")
-            user_input = input("Enter the number of the correct kanji: ")
-        if int(user_input) == choices.index(row['furigana'].values[0]) + 1:
-            print("\033[92mCorrect!\033[0m")
-        else:
-            print("\033[91mIncorrect!\033[0m")
-            print(f"The correct answer is: {row['furigana'].values[0]}")
-    if mode == -1:
-        print(f'which is the meaning of this word: \n')
-        print(row['furigana'].values[0])
-        print("Choose the correct meaning:")
-        choices = noise_word.sample(n=number_of_noise_word)['meaning'].tolist()
-        choices.append(row['meaning'].values[0])
-        random.shuffle(choices)
-        for i, choice in enumerate(choices):
-            print(f"{i+1}. {choice}")
-        user_input = input("Enter the number of the correct meaning: ")
-        while not user_input.isdigit():
-            print("Invalid input. Please enter a number.")
-            user_input = input("Enter the number of the correct meaning: ")
-        if int(user_input) == choices.index(row['meaning'].values[0]) + 1:
-            print("\033[92mCorrect!\033[0m")
-        else:
-            print("\033[91mIncorrect!\033[0m")
-            print(f"The correct answer is: {row['meaning'].values[0]}")
     if mode == 0:
         print(f'which is the meaning of this word: \n')
         print(row['kanji'].values[0])
@@ -66,10 +30,9 @@ while True:
             print("Invalid input. Please enter a number.")
             user_input = input("Enter the number of the correct meaning: ")
         if int(user_input) == choices.index(row['meaning'].values[0]) + 1:
-            print("\033[92mCorrect!\033[0m")
+            printCorrect()
         else:
-            print("\033[91mIncorrect!\033[0m")
-            print(f"The correct answer is: {row['meaning'].values[0]}")
+            printIncorrect(row['meaning'].values[0])
     elif mode == 1:
         print(f'which is the kanji of this word: \n')
         print(f"\"{row['meaning'].values[0]}\"")
@@ -84,19 +47,17 @@ while True:
             print("Invalid input. Please enter a number.")
             user_input = input("Enter the number of the correct kanji: ")
         if int(user_input) == choices.index(row['kanji'].values[0]) + 1:
-            print("\033[92mCorrect!\033[0m")
+            printCorrect()
         else:
-            print("\033[91mIncorrect!\033[0m")
-            print(f"The correct answer is: {row['kanji'].values[0]}")
+            printIncorrect(row['kanji'].values[0])
     elif mode == 2:
         print(f'what is the romaji of this kanji: \n')
         print(row['kanji'].values[0])
         user_input = input("Enter the romaji of the kanji: ")
         if user_input == row['romaji'].values[0]:
-            print("\033[92mCorrect!\033[0m")
+            printCorrect()
         else:
-            print("\033[91mIncorrect!\033[0m")
-            print(f"The correct answer is: {row['romaji'].values[0]}")
+            printIncorrect(row['romaji'].values[0])
     else:
         print()
     

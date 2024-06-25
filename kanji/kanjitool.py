@@ -4,6 +4,11 @@ import argparse
 # Create a sample DataFrame
 # Get the current file path
 index_file = os.path.join(os.path.dirname(__file__), "index.txt")
+def printCorrect():
+    print("\033[92mCorrect!\033[0m" + "-------")
+def printIncorrect(correct_answer):
+    print("\033[91mIncorrect!\033[0m" )
+    print(f"Answer is: {correct_answer} " + "-------")
 def getShuffledKanjiDataFrame():
     current_path = os.path.abspath(__file__)
 
