@@ -67,6 +67,8 @@ def getOldWords(learning_rate):
     print(selected_words)
     return selected_words
 def getOldWordsWithDepth(learning_rate, depth):
+    if depth == 0:
+        return getOldWords(learning_rate)
     if not os.path.exists(index_file):
         with open(index_file, "w") as file:
             file.write("0")
@@ -88,6 +90,9 @@ def getOldWordsWithDepth(learning_rate, depth):
     selected_words = getWordRange(start, end)
     print(selected_words)
     return selected_words
+def getOldWordsWithDepthAndShuffle(learning_rate,depth):
+    df = getOldWordsWithDepth(learning_rate,depth)
+    return df.sample(frac=1).reset_index(drop=True)
 parser = argparse.ArgumentParser()
 parser.add_argument("-n", "--increment", action="store_true", help="Increment the index by 1")
 parser.add_argument("-p", "--decrement", action="store_true", help="Decrement the index by 1")
