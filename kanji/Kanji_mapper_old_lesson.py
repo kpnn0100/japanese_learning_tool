@@ -62,6 +62,7 @@ while True:
             printCorrect()
         else:
             printIncorrect(row['romaji'].values[0])
+        print(row['meaning'].values[0])
     elif mode == 3:
         print(f'what is the romaji of this word: \n')
         print(row['meaning'].values[0])
