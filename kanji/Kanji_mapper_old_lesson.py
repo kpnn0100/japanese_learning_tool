@@ -18,61 +18,13 @@ while True:
     #remove row from noise_word
     noise_word = noise_word.drop(row.index)
     # mode = random.randint(0, 2)
-    mode = random.randint(2, 2)
-    #if the word don't have kanji (kanji = " ") then mode should be minus
-    if row['kanji'].values[0] == " ":
-        mode = -mode-1
-    # switch case for mode
-    if mode == 0:
-        print(row['kanji'].values[0])
-        print("Choose the correct meaning:")
-        choices = noise_word.sample(n=number_of_noise_word)['meaning'].tolist()
-        choices.append(row['meaning'].values[0])
-        random.shuffle(choices)
-        for i, choice in enumerate(choices):
-            print(f"{i+1}. {choice}")
-        user_input = input("number of the correct meaning: ")
-        while not user_input.isdigit():
-            print("Invalid input. Please enter a number.")
-            user_input = input("number of the correct meaning: ")
-        if int(user_input) == choices.index(row['meaning'].values[0]) + 1:
-            printCorrect()
-        else:
-            printIncorrect(row['meaning'].values[0])
-    elif mode == 1:
-        print(f"\"{row['meaning'].values[0]}\"")
-        print("Choose the correct kanji:")
-        choices = noise_word.sample(n=number_of_noise_word)['kanji'].tolist()
-        choices.append(row['kanji'].values[0])
-        random.shuffle(choices)
-        for i, choice in enumerate(choices):
-            print(f"{i+1}. {choice}")
-        user_input = input("number of the correct kanji: ")
-        while not user_input.isdigit():
-            print("Invalid input. Please enter a number.")
-            user_input = input("number of the correct kanji: ")
-        if int(user_input) == choices.index(row['kanji'].values[0]) + 1:
-            printCorrect()
-        else:
-            printIncorrect(row['kanji'].values[0])
+    mode = random.randint(1, 2)
+    question = ""
+    if mode == 1:
+        question = row['kanji'].values[0]
     elif mode == 2:
-        print(row['kanji'].values[0])
-        user_input = input("romaji: ")
-        if user_input == row['romaji'].values[0]:
-            printCorrect()
-        else:
-            printIncorrect(row['romaji'].values[0])
-        print(row['meaning'].values[0])
-    elif mode == 3:
-        print(f'what is the romaji of this word: \n')
-        print(row['meaning'].values[0])
-        user_input = input("romaji: ")
-        if user_input == row['romaji'].values[0]:
-            printCorrect()
-        else:
-            printIncorrect(row['romaji'].values[0])
-    else:
-        print()
+        question = row['meaning'].values[0]
+    show_question(question,row['romaji'].values[0],row['meaning'].values[0],row['kanji'].values[0])
     
 
 # Rest of your code goes here

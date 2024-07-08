@@ -4,6 +4,41 @@ import argparse
 # Create a sample DataFrame
 # Get the current file path
 index_file = os.path.join(os.path.dirname(__file__), "index.txt")
+from gtts import gTTS
+import playsound
+import os
+import random
+import pygame
+import threading
+
+def speak_japanese(phrase):
+    pygame.mixer.init()
+    tts = gTTS(text=phrase, lang='ja')
+    audio_file = f'{phrase}.mp3'
+    tts.save(audio_file)
+    def play_audio():
+        pygame.mixer.music.load(audio_file)
+        pygame.mixer.music.play()
+        while pygame.mixer.music.get_busy():
+            pygame.time.Clock().tick(10)
+        pygame.mixer.music.stop()
+    thread = threading.Thread(target=play_audio)
+    thread.start()
+    thread.join()
+    pygame.mixer.quit()
+    os.remove(audio_file)
+def show_question(show_word, answer_word, meaning, speak_word):
+    print(show_word)
+    user_input = input("romaji: ")
+    speak_japanese(speak_word)
+    if user_input == answer_word:
+        printCorrect()
+        print(meaning)
+        return True
+    printIncorrect(answer_word)
+    print(meaning)
+    return False
+    
 def printCorrect():
     print("\033[92mCorrect!\033[0m" + "-------")
 def printIncorrect(correct_answer):
