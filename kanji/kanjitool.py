@@ -5,7 +5,6 @@ import argparse
 # Get the current file path
 index_file = os.path.join(os.path.dirname(__file__), "index.txt")
 from gtts import gTTS
-import playsound
 import os
 import random
 import pygame
