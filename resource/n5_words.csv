@@ -244,7 +244,7 @@ kanji,furigana,romaji,meaning
 ここ,ここ,koko,here
 午後,ごご,gogo,afternoon
 九日,ここのか,kokonoka,"9th day of a month, 9 days"
-九つ,ここのつ,kokonotsu,nine
+九つ,ここのつ,kokonotsu,nine (counter)
 ご主人,ごしゅじん,goshujin,someone else’s husband
 午前,ごぜん,gozen,"morning, a.m."
 答える,こたえる,kotaeru,to answer
@@ -404,7 +404,7 @@ kanji,furigana,romaji,meaning
 強い,つよい,tsuyoi,strong
 手,て,te,hand
 テープ,テープ,teepu,tape
-,"テープレコーダー",rekoodaa,tape recorder
+テープレコーダー,テープレコーダー,teepu rekoodaa,tape recorder
 テーブル,テーブル,teeburu,table
 出かける,でかける,dekakeru,to go out
 手紙,てがみ,tegami,letter
@@ -485,7 +485,7 @@ kanji,furigana,romaji,meaning
 登る,のぼる,noboru,to climb up
 飲物,のみもの,nomimono,drinks
 飲む,のむ,nomu,to drink
-乗る,のる,noru,"to take, to ride"
+乗る,のる,noru,"to get on, to ride"
 歯,は,ha,teeth
 パーテイー,パーテイー,paateii,party
 はい,はい,hai,yes

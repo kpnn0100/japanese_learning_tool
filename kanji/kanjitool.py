@@ -43,6 +43,19 @@ def printCorrect():
 def printIncorrect(correct_answer):
     print("\033[91mIncorrect!\033[0m" )
     print(f"Answer is: {correct_answer} " + "-------")
+def getShuffledEzToForget():
+    current_path = os.path.abspath(__file__)
+
+    # Get the relative path to the CSV file
+    csv_path = os.path.join(os.path.dirname(current_path), '..', 'resource', 'easy_to_forget_word.csv')
+
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(csv_path)
+    df.loc[df["kanji"] == " ", "kanji"] = df["furigana"]
+    # Shuffle the DataFrame with a fixed seed
+    shuffled_df = df.sample(frac=1, random_state=42).reset_index(drop=True)
+
+    return shuffled_df
 def getShuffledKanjiDataFrame():
     current_path = os.path.abspath(__file__)
 

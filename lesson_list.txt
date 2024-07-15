@@ -6,3 +6,4 @@ Kanji old lesson revision : kanji/Kanji_mapper_old_without_random.py
 Kanji Mapper next : kanji/kanjitool.py -n
 Kanji Mapper previous : kanji/kanjitool.py -p
 Romaji revision: kanji/Kanji_mapper_old_romaji_test.py
+Forgot word revision : kanji/Kanji_mapper_old_lesson_easy_to_forget_word.py
