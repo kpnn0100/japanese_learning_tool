@@ -309,7 +309,7 @@ kanji,furigana,romaji,meaning
 食堂,しょくどう,shokudou,"dining room, canteen"
 知る,しる,shiru,to know
 白い,しろい,shiroi,white
-〜人,〜じん,~jin,"~an, ~ese (nationality)"
+〜人 (nationality),〜じん,~jin,"~an, ~ese (nationality)"
 新聞,しんぶん,shinbun,newspaper
 水曜日,すいようび,suiyoubi,Wednesday
 吸う,すう,suu,"to breathe, to smoke"
@@ -476,7 +476,7 @@ kanji,furigana,romaji,meaning
 荷物,にもつ,nimotsu,luggage
 ニュース,ニュース,nyuusu,news
 庭,にわ,niwa,garden
-〜人,~にん,~nin,… people
+〜人 (counter),~にん,~nin,… people
 脱ぐ,ぬぐ,nugu,to take off clothes
 ネクタイ,ネクタイ,nekutai,necktie
 寝る,ねる,neru,to go to bed
@@ -660,7 +660,7 @@ kanji,furigana,romaji,meaning
 両親,りょうしん,ryoushin,parents
 料理,りょうり,ryouri,cooking
 旅行,りょこう,ryokou,travel
- ,れい,rei,zero
+零,れい,rei,zero
 冷蔵庫,れいぞうこ,reizouko,refrigerator
 レコード,レコード,rekoodo,record
 レストラン,レストラン,resutoran,restaurant

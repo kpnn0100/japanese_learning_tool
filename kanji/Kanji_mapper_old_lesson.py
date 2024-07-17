@@ -18,7 +18,7 @@ while True:
     #remove row from noise_word
     noise_word = noise_word.drop(row.index)
     # mode = random.randint(0, 2)
-    mode = random.randint(1, 2)
+    mode = random.randint(1, 1)
     question = ""
     if mode == 1:
         question = row['kanji'].values[0]

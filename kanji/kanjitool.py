@@ -60,7 +60,7 @@ def getShuffledKanjiDataFrame():
     current_path = os.path.abspath(__file__)
 
     # Get the relative path to the CSV file
-    csv_path = os.path.join(os.path.dirname(current_path), '..', 'resource', 'n5_words.csv')
+    csv_path = os.path.join(os.path.dirname(current_path), '..', 'jlpt', 'n5.csv')
 
     # Read the CSV file into a DataFrame
     df = pd.read_csv(csv_path)

@@ -4,6 +4,11 @@ import argparse
 import unicodedata
 from enum import Enum
 from define import *
+import pykakasi
+
+# Initialize pykakasi
+kakasi = pykakasi.kakasi()
+
 current_path = os.path.abspath(__file__)
 csv_path = os.path.join(os.path.dirname(current_path), '..', 'resource', 'hiragana.csv')
 hiragana_table = pd.read_csv(csv_path)
@@ -14,38 +19,9 @@ for index, row in hiragana_table.iterrows():
     furigana_to_romaji[furigana] = romaji
 
 def get_romaji(furigana):
-    romaji = ""
-    double = False
-    for char in furigana:
-        if char in 'ゃゅょ':
-            if len(romaji)>2:
-                if romaji[len(romaji)-3:]=="shi" or romaji[len(romaji)-3:]=="chi":
-                    romaji = romaji[:-1]
-                    romaji += furigana_to_romaji[char][1]
-                elif romaji[len(romaji)-2:]=="ji":
-                    romaji = romaji[:-1]
-                    romaji += furigana_to_romaji[char][1]
-                else:
-                    romaji = romaji[:-1]
-                    romaji += furigana_to_romaji[char]
-            elif len(romaji)>1:
-                if romaji[len(romaji)-2:]=="ji":
-                    romaji = romaji[:-1]
-                    romaji += furigana_to_romaji[char][1]
-                else:
-                    romaji = romaji[:-1]
-                    romaji += furigana_to_romaji[char]
-
-            None
-        elif char == 'っ':
-            double = True
-            None
-        else:
-            if double:
-                romaji += furigana_to_romaji[char][0]
-                double = False
-            romaji += furigana_to_romaji[char]
-    return romaji
+    romaji = kakasi.convert(furigana)
+    romaji_text = ''.join([item['hepburn'] for item in romaji])
+    return romaji_text
 def isIchidan(verb):
     is_written_in_hiragana = True
     for char in verb:
@@ -67,5 +43,35 @@ def conjugate_verb(verb, form):
         verb=verb[:-1]
         verb+=form.godan_ending
         return verb
-for form in JapaneseVerbForms:
-    print(conjugate_verb('taberu',form.value))
+
+
+def open_word_data_as_dataframe(index):
+    current_path = os.path.abspath(__file__)
+    csv_path = os.path.join(os.path.dirname(current_path), '..', 'jlpt', f"n{index}.csv")
+    df = pd.read_csv(csv_path)
+    return df
+def save_dataframe(dataframe, index):
+    current_path = os.path.abspath(__file__)
+    csv_path = os.path.join(os.path.dirname(current_path), '..', 'jlpt', f"n{index}.csv")
+    dataframe.to_csv(csv_path, index=False)
+    return dataframe
+def add_romaji_column_to_dataframe(dataframe):
+    romaji_list = []
+    for index, row in dataframe.iterrows():
+        furigana = row['furigana']
+        if furigana == None:
+            furigana = row['kanji']
+        romaji = get_romaji(furigana)
+        romaji_list.append(romaji)
+    dataframe['romaji'] = romaji_list
+    return dataframe
+def rename_column(dataframe, old_column_name, new_column_name):
+    dataframe.rename(columns={old_column_name: new_column_name}, inplace=True)
+    return dataframe
+index = 1
+data = open_word_data_as_dataframe(index)
+data = rename_column(data,"expression","kanji")
+data = rename_column(data,"reading","furigana")
+data = add_romaji_column_to_dataframe(data)
+save_dataframe(data,index)
+
