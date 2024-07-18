@@ -29,7 +29,7 @@ def speak_japanese(phrase):
 def show_question(show_word, answer_word, meaning, speak_word):
     print(show_word)
     user_input = input("romaji: ")
-    speak_japanese(speak_word)
+    # speak_japanese(speak_word)
     if user_input == answer_word:
         printCorrect()
         print(meaning)
@@ -64,6 +64,8 @@ def getShuffledKanjiDataFrame():
 
     # Read the CSV file into a DataFrame
     df = pd.read_csv(csv_path)
+    df = df.drop(columns=['tags'])
+    df = df.drop(columns=['guid'])
     df.loc[df["kanji"] == " ", "kanji"] = df["furigana"]
     # Shuffle the DataFrame with a fixed seed
     shuffled_df = df.sample(frac=1, random_state=42).reset_index(drop=True)

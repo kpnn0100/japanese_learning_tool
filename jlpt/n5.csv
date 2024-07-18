@@ -210,8 +210,8 @@ kanji,furigana,meaning,tags,guid,romaji
 切る,きる,to cut; to hang up (a phone),Genki Genki_Ln.8 Intermediate_Japanese Intermediate_Japanese_Ln.12 JLPT JLPT_5 JLPT_N5,A;e]B2v]77,kiru
 着る,きる,to put on (clothes above your waist); to wear,Genki Genki_Ln.7 Intermediate_Japanese Intermediate_Japanese_Ln.9 JLPT JLPT_5 JLPT_N5,g$-Eqb.V#N,kiru
 綺麗,きれい,"pretty, clean, tidy",JLPT JLPT_5 JLPT_N5,y:f/R>36c4,kirei
-キロ; キログラム,キロ; キログラム,(abbr.) kilo (kilogram),JLPT JLPT_3 JLPT_5 JLPT_N5,"v,MI,fa=Pd",kiro; kiroguramu
-キロ; キロメートル,キロ; キロメートル,(abbr.) kilo (kilometer),JLPT JLPT_3 JLPT_5 JLPT_N5,I+%u|o<M9),kiro; kiromeetoru
+キログラム,キログラム,(abbr.) kilo (kilogram),JLPT JLPT_3 JLPT_5 JLPT_N5,"v,MI,fa=Pd",kiroguramu
+キロメートル,キロメートル,(abbr.) kilo (kilometer),JLPT JLPT_3 JLPT_5 JLPT_N5,I+%u|o<M9),kiromeetoru
 銀行,ぎんこう,bank,Genki Genki_Ln.2 JLPT JLPT_5 JLPT_N5,dJzM6E^Crr,ginkou
 金曜日,きんようび,Friday,Genki Genki_Ln.4 JLPT JLPT_3 JLPT_5 JLPT_N5,H)-<3>G;wq,kinyoubi
 九,く,nine,JLPT JLPT_3 JLPT_5 JLPT_N5,J.@??p5!Es,ku
@@ -289,7 +289,7 @@ kanji,furigana,meaning,tags,guid,romaji
 三,さん,three,JLPT JLPT_5 JLPT_N5,jB}%X}YQ)P,san
 散歩,さんぽ (する),"walk, stroll",JLPT JLPT_3 JLPT_5 JLPT_N5,C7E%FY>8|T,sanpo (suru)
 四,し,four,JLPT JLPT_3 JLPT_5 JLPT_N5,q%G#*K^0R+,shi
-～時,～じ,~ o'clock (time),JLPT JLPT_1 JLPT_5 JLPT_N5,m]7PVW-h[^,~ji
+～時 (o clock),～じ,~ o'clock (time),JLPT JLPT_1 JLPT_5 JLPT_N5,m]7PVW-h[^,~ji
 塩,しお,salt,JLPT JLPT_5 JLPT_N5,mQXb>=tTk},shio
 しかし,しかし,however; but,Intermediate_Japanese Intermediate_Japanese_Ln.3 JLPT JLPT_5 JLPT_N5,g2(en9wt=#,shikashi
 時間,じかん,time,Genki Genki_Ln.14 JLPT JLPT_2 JLPT_5 JLPT_N5,rl<d#jP#zf,jikan
@@ -362,13 +362,13 @@ kanji,furigana,meaning,tags,guid,romaji
 そこ,そこ,"that place, there; bottom, sole",Genki Genki_Ln.4 JLPT JLPT_2 JLPT_3 JLPT_5 JLPT_N5,v56KFY.>v@,soko
 そちら,そちら,over there,JLPT JLPT_5 JLPT_N5,xbjis~A;+*,sochira
 そっち,そっち,over there,JLPT JLPT_5 JLPT_N5,#PXdxM^5L,sotchi
-外,そと,"outside, exterior",Genki Genki_Ln.18 Intermediate_Japanese Intermediate_Japanese_Ln.2 JLPT JLPT_5 JLPT_N5,AFB3>g85F],soto
+外 (outside),そと,"outside, exterior",Genki Genki_Ln.18 Intermediate_Japanese Intermediate_Japanese_Ln.2 JLPT JLPT_5 JLPT_N5,AFB3>g85F],soto
 その,その,that,JLPT JLPT_3 JLPT_5 JLPT_N5,C2OIF=[)E_,sono
 そば,そば,"near, close, beside; Japanese traditional buckwheat noodle",Genki Genki_Ln.15 JLPT JLPT_3 JLPT_5 JLPT_N5,M)]t*`<F@c,soba
 空,そら,sky,JLPT JLPT_5 JLPT_N5,D.6b;1{88^,sora
 それ,それ,that one,Genki Genki_Ln.2 JLPT JLPT_3 JLPT_5 JLPT_N5,t%n)3@@XX+,sore
 それから,それから,"and then, after that",Intermediate_Japanese Intermediate_Japanese_Ln.1 JLPT JLPT_5 JLPT_N5,sV(hn]KLzr,sorekara
-それでは,それでは,"in that situation, well then...",JLPT JLPT_5 JLPT_N5,"v[]T|jw&,[",soredeha
+それでは,それでは,"in that situation, well then...",JLPT JLPT_5 JLPT_N5,"v[]T|jw&,[",soredewa
 ～台,～だい,counter for vehicles; machines,JLPT JLPT_5 JLPT_N5,ztM0ejgNN~,~dai
 大学,だいがく,college; university,Genki Genki_Ln.1 JLPT JLPT_5 JLPT_N5,kHyc<WfmUQ,daigaku
 大使館,たいしかん,embassy,JLPT JLPT_5 JLPT_N5,"n?Lz{tQ,#T",taishikan
@@ -428,10 +428,10 @@ kanji,furigana,meaning,tags,guid,romaji
 テーブル,テーブル,table,JLPT JLPT_5 JLPT_N5,n-.M5OZr5!,teeburu
 出かける,でかける,to go out; to depart,Genki Genki_Ln.5 JLPT JLPT_5 JLPT_N5,Fx}b2N2gun,dekakeru
 手紙,てがみ,letter,Genki Genki_Ln.4 JLPT JLPT_5 JLPT_N5,M#PC#!OTka,tegami
-できる,できる,to be able to (to accomplish),JLPT JLPT_3 JLPT_4 JLPT_5 JLPT_N5,vB~NGv+*>H,dekiru
+出来る,できる,to be able to (to accomplish),JLPT JLPT_3 JLPT_4 JLPT_5 JLPT_N5,vB~NGv+*>H,dekiru
 出口,でぐち,an exit,Intermediate_Japanese Intermediate_Japanese_Ln.7 JLPT JLPT_5 JLPT_N5,sv__368x5>,deguchi
 テスト,テスト,test,Genki Genki_Ln.5 JLPT JLPT_5 JLPT_N5,Lhy<!{J6SG,tesuto
-では,では,"then, well, so",JLPT JLPT_3 JLPT_5 JLPT_N5,NY{|SsdlKz,deha
+では,では,"then, well, so",JLPT JLPT_3 JLPT_5 JLPT_N5,NY{|SsdlKz,dewa
 デパート,デパート,(abbr.) department store,Genki Genki_Ln.4 JLPT JLPT_5 JLPT_N5,rd.b%pP~B0,depaato
 でも,でも,"but, however",JLPT JLPT_3 JLPT_5 JLPT_N5,izQ~3T7Pp},demo
 出る,でる,"to appear, to leave",JLPT JLPT_5 JLPT_N5,A23ctPX1n^,deru
@@ -452,7 +452,7 @@ kanji,furigana,meaning,tags,guid,romaji
 十,(〜を) とお,ten (~),Genki Genki_Ln.9 JLPT JLPT_3 JLPT_5 JLPT_N5,BjWdBTc)9!,(~wo) too
 遠い,とおい,"far (away), distant",Genki Genki_Ln.21 JLPT JLPT_5 JLPT_N5,Jl9yYXnyJ<,tooi
 十日,とおか,ten days; tenth day of the month,Genki Genki_Ln.13 JLPT JLPT_5 JLPT_N5,g[CNT&GA2[,tooka
-～時,～とき,at the time of ~,JLPT JLPT_3 JLPT_5 JLPT_N5,bGLp[lZC.;,~toki
+～時 (at time),～とき,at the time of ~,JLPT JLPT_3 JLPT_5 JLPT_N5,bGLp[lZC.;,~toki
 時々,ときどき,sometimes,Genki Genki_Ln.3 JLPT JLPT_5 JLPT_N5,s+W64X?THZ,tokidoki
 時計,とけい,a watch; a clock,Genki Genki_Ln.2 Intermediate_Japanese Intermediate_Japanese_Ln.2 JLPT JLPT_5 JLPT_N5,u/fL<ne:Cb,tokei
 どこ,どこ,"where, what place",Genki Genki_Ln.2 JLPT JLPT_5 JLPT_N5,h_Fa6?Ps@9,doko
@@ -601,7 +601,7 @@ kanji,furigana,meaning,tags,guid,romaji
 便利,べんり,"convenient, handy",JLPT JLPT_5 JLPT_N5,NSM1sxi#q3,benri
 帽子,ぼうし,hat; cap,Genki Genki_Ln.2 JLPT JLPT_5 JLPT_N5,whud$h6Xsa,boushi
 ボールペン,ボールペン,ball-point pen,JLPT JLPT_5 JLPT_N5,A1a57pRAi*,boorupen
-外,ほか,"other, the rest",JLPT JLPT_3 JLPT_5 JLPT_N5,q-Rsw+YG/*,hoka
+外 (other),ほか,"other, the rest",JLPT JLPT_3 JLPT_5 JLPT_N5,q-Rsw+YG/*,hoka
 ポケット,ポケット,pocket,JLPT JLPT_5 JLPT_N5,PrdL>hhb^[,poketto
 欲しい,ほしい,"to want, in need of",JLPT JLPT_5 JLPT_N5,"IB/)D,[pe$",hoshii
 ポスト,ポスト,"mailbox; post, position",JLPT JLPT_5 JLPT_N5,CSDW$^FNBN,posuto
@@ -713,7 +713,7 @@ kanji,furigana,meaning,tags,guid,romaji
 分かる,わかる,to understand,JLPT JLPT_5 JLPT_N5,vF3#$3|-lu,wakaru
 忘れる,わすれる,to forget,Intermediate_Japanese Intermediate_Japanese_Ln.3 JLPT JLPT_5 JLPT_N5,HW)xrzU[Z4,wasureru
 私,わたし,"I, myself",Genki Genki_Ln.1 JLPT JLPT_5 JLPT_N5,I+Y7lySy.4,watashi
-私,わたくし,"I (formal), myself, private affairs",Genki Genki_Ln.13 JLPT JLPT_2 JLPT_5 JLPT_N5,m!I5:hHt<W,watakushi
+私 (formal),わたくし,"I (formal), myself, private affairs",Genki Genki_Ln.13 JLPT JLPT_2 JLPT_5 JLPT_N5,m!I5:hHt<W,watakushi
 渡す,わたす,to hand (something) over (v.t.); to get across,Intermediate_Japanese Intermediate_Japanese_Ln.6 JLPT JLPT_5 JLPT_N5,KvDHRUZ*r&,watasu
 渡る,わたる,"to cross over, to go across",JLPT JLPT_5 JLPT_N5,z9kLvI4/{d,wataru
 悪い,わるい,"bad, sinful; inferior",Genki Genki_Ln.12 Intermediate_Japanese Intermediate_Japanese_Ln.3 JLPT JLPT_5 JLPT_N5,rxV$$v%QZ;,warui
