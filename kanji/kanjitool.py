@@ -9,7 +9,6 @@ import os
 import random
 import pygame
 import threading
-
 def speak_japanese(phrase):
     pygame.mixer.init()
     tts = gTTS(text=phrase, lang='ja')
@@ -164,3 +163,12 @@ if args.decrement:
     print(f"lesson {number}")
     with open(index_file, "w") as file:
         file.write(str(number))
+def save_learned_words():
+    current_path = os.path.abspath(__file__)
+
+    # Get the relative path to the CSV file
+    csv_path = os.path.join(os.path.dirname(current_path), '..', 'resource', 'learned_word.csv')
+    learned = getOldWordsWithDepth(10,0)
+    learned.to_csv(csv_path, index=False)
+
+save_learned_words()

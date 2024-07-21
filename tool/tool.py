@@ -68,10 +68,4 @@ def add_romaji_column_to_dataframe(dataframe):
 def rename_column(dataframe, old_column_name, new_column_name):
     dataframe.rename(columns={old_column_name: new_column_name}, inplace=True)
     return dataframe
-index = 1
-data = open_word_data_as_dataframe(index)
-data = rename_column(data,"expression","kanji")
-data = rename_column(data,"reading","furigana")
-data = add_romaji_column_to_dataframe(data)
-save_dataframe(data,index)
 
