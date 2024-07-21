@@ -42,7 +42,7 @@ kanji,furigana,meaning,tags,guid,romaji
 有る,ある,"to be, to have",JLPT JLPT_3 JLPT_5 JLPT_N5,v`6i&kQMJj,aru
 歩く,あるく,to walk,Genki Genki_Ln.20 Intermediate_Japanese Intermediate_Japanese_Ln.1 JLPT JLPT_5 JLPT_N5,"Kkagn,fSTU",aruku
 あれ,あれ,that one (over there),Genki Genki_Ln.2 JLPT JLPT_5 JLPT_N5,Co(PaI(^/_,are
-いい; よい,いい; よい,good,JLPT JLPT_5 JLPT_N5,O(#?WJE%7H,ii; yoi
+良い,いい; よい,good,JLPT JLPT_5 JLPT_N5,O(#?WJE%7H,ii; yoi
 いいえ,いいえ,"no, not at all",JLPT JLPT_5 JLPT_N5,"iO`r],Af`o",iie
 言う,いう,to say,Genki Genki_Ln.8 JLPT JLPT_5 JLPT_N5,iurNhMLEpv,iu
 家,いえ,"house, home",Genki Genki_Ln.3 JLPT JLPT_2 JLPT_3 JLPT_5 JLPT_N5,QGc`#y1e97,ie
@@ -466,7 +466,7 @@ kanji,furigana,meaning,tags,guid,romaji
 隣,となり,"next to, next door to",Intermediate_Japanese Intermediate_Japanese_Ln.1 JLPT JLPT_5 JLPT_N5,GigT2yQ[2E,tonari
 どの,どの,which,JLPT JLPT_5 JLPT_N5,H+g1ci<Mvc,dono
 飛ぶ,とぶ,"to fly, to hop",JLPT JLPT_5 JLPT_N5,wLF5gUV](>,tobu
-止まる,とまる,to come to a halt,JLPT JLPT_5 JLPT_N5,Q+OrrzleWd,tomaru
+止まる,とまる,to stop; to come to a halt,JLPT JLPT_5 JLPT_N5,Q+OrrzleWd,tomaru
 友達,ともだち,friend,Genki Genki_Ln.1 Intermediate_Japanese Intermediate_Japanese_Ln.1 JLPT JLPT_5 JLPT_N5,E)w$/p&I#O,tomodachi
 土曜日,どようび,Saturday,Genki Genki_Ln.3 JLPT JLPT_3 JLPT_5 JLPT_N5,Q%+.*M.E9m,doyoubi
 鳥,とり,"chicken (lit., bird)",Intermediate_Japanese Intermediate_Japanese_Ln.6 JLPT JLPT_5 JLPT_N5,lc>;F##&%m,tori
