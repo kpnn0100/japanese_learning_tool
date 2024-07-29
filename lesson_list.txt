@@ -3,7 +3,9 @@ Katakana Mapper : mapper/Katakana_mapper.py
 Kanji Mapper : kanji/Kanji_mapper.py
 Kanji Mapper old lesson : kanji/Kanji_mapper_old_lesson.py
 Kanji old lesson revision : kanji/Kanji_mapper_old_without_random.py
+Kanji only old lesson revision : kanji/Kanji_mapper_old_without_random_kanji_only.py
 Kanji Mapper next : kanji/kanjitool.py -n
 Kanji Mapper previous : kanji/kanjitool.py -p
 Romaji revision: kanji/Kanji_mapper_old_romaji_test.py
 Forgot word revision : kanji/Kanji_mapper_old_lesson_easy_to_forget_word.py
+Forgot word revision test: kanji/Kanji_mapper_old_lesson_easy_to_forget_word_revision.py

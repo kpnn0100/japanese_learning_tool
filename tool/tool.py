@@ -3,7 +3,7 @@ import os
 import argparse
 import unicodedata
 from enum import Enum
-from define import *
+from .define import *
 import pykakasi
 
 # Initialize pykakasi
@@ -12,12 +12,14 @@ kakasi = pykakasi.kakasi()
 current_path = os.path.abspath(__file__)
 csv_path = os.path.join(os.path.dirname(current_path), '..', 'resource', 'hiragana.csv')
 hiragana_table = pd.read_csv(csv_path)
+katakana_table = pd.read_csv(os.path.join(os.path.dirname(current_path), '..', 'resource', 'katakana.csv'))
 furigana_to_romaji = {}
 for index, row in hiragana_table.iterrows():
     furigana = row['furigana']
     romaji = row['romaji']
     furigana_to_romaji[furigana] = romaji
-
+def get_hiragana_table():
+    return hiragana_table
 def get_romaji(furigana):
     romaji = kakasi.convert(furigana)
     romaji_text = ''.join([item['hepburn'] for item in romaji])
@@ -79,5 +81,3 @@ def add_romaji_column_to_dataframe(dataframe):
 def rename_column(dataframe, old_column_name, new_column_name):
     dataframe.rename(columns={old_column_name: new_column_name}, inplace=True)
     return dataframe
-
-print(conjugate_verb("食べる",BaseForm.POLITE, False, True, Tense.NONPAST))

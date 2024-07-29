@@ -9,6 +9,9 @@ import os
 import random
 import pygame
 import threading
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__),'..'))
+from tool.tool import *
 def speak_japanese(phrase):
     pygame.mixer.init()
     tts = gTTS(text=phrase, lang='ja')
@@ -52,7 +55,7 @@ def getShuffledEzToForget():
     df = pd.read_csv(csv_path)
     df.loc[df["kanji"] == " ", "kanji"] = df["furigana"]
     # Shuffle the DataFrame with a fixed seed
-    shuffled_df = df.sample(frac=1, random_state=42).reset_index(drop=True)
+    shuffled_df = df.sample(frac=1).reset_index(drop=True)
 
     return shuffled_df
 def getShuffledKanjiDataFrame():
