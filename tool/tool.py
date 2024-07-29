@@ -22,7 +22,7 @@ def get_romaji(furigana):
     romaji = kakasi.convert(furigana)
     romaji_text = ''.join([item['hepburn'] for item in romaji])
     return romaji_text
-def isIchidan(verb):
+def getKindOfVerb(verb):
     is_written_in_hiragana = True
     for char in verb:
         if char not in furigana_to_romaji:
@@ -30,19 +30,30 @@ def isIchidan(verb):
     if is_written_in_hiragana:
         verb = get_romaji(verb)
     if verb == "kuru" or verb == "suru":
-        return True
+        return "irregular"
     if verb.endswith('eru') or verb.endswith('iru'):
-        return True
-    return False
-def conjugate_verb(verb, form):
-    if isIchidan(verb):
-        verb=verb[:-2]
-        verb+=form.ichidan_ending
-        return verb
-    else:
-        verb=verb[:-1]
-        verb+=form.godan_ending
-        return verb
+        return "ichidan"
+    return "godan"
+def conjugate_verb(verb, baseform, polite=True, positive = True, tense = Tense.NONPAST):
+    kind = VerbClass.IRREGULAR
+    if getKindOfVerb(verb) == "irregular":
+        kind = VerbClass.IRREGULAR
+    elif getKindOfVerb(verb) == "ichidan":
+        kind = VerbClass.ICHIDAN
+    elif getKindOfVerb(verb) == "godan":
+        kind = VerbClass.GODAN
+    polite_form = Formality.PLAIN
+    if polite:
+        polite_form = Formality.POLITE
+    positive_form = Polarity.POSITIVE
+    if not positive:
+        positive_form = Polarity.NEGATIVE
+    tense_form = Tense.NONPAST
+    if tense == Tense.PAST:
+        tense_form = Tense.PAST
+    return generate_japanese_verb_by_str(verb, kind, baseform, polite_form, positive_form, tense_form)
+
+    return generate_japanese_verb_by_str(verb, VerbClass.IRREGULAR, form.baseform)
 
 
 def open_word_data_as_dataframe(index):
@@ -69,3 +80,4 @@ def rename_column(dataframe, old_column_name, new_column_name):
     dataframe.rename(columns={old_column_name: new_column_name}, inplace=True)
     return dataframe
 
+print(conjugate_verb("食べる",BaseForm.POLITE, False, True, Tense.NONPAST))
