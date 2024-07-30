@@ -20,10 +20,17 @@ for index, row in hiragana_table.iterrows():
     furigana_to_romaji[furigana] = romaji
 def get_hiragana_table():
     return hiragana_table
+
+def get_furigana(kanji):
+    furigana     = kakasi.convert(kanji)
+    furigana_text = ''.join([item['hira'] for item in furigana])
+    return furigana_text
+
 def get_romaji(furigana):
     romaji = kakasi.convert(furigana)
     romaji_text = ''.join([item['hepburn'] for item in romaji])
     return romaji_text
+
 def getKindOfVerb(verb):
     is_written_in_hiragana = True
     for char in verb:
@@ -37,6 +44,7 @@ def getKindOfVerb(verb):
         return "ichidan"
     return "godan"
 def conjugate_verb(verb, baseform, polite=True, positive = True, tense = Tense.NONPAST):
+    verb = get_furigana(verb)
     kind = VerbClass.IRREGULAR
     if getKindOfVerb(verb) == "irregular":
         kind = VerbClass.IRREGULAR
@@ -54,14 +62,15 @@ def conjugate_verb(verb, baseform, polite=True, positive = True, tense = Tense.N
     if tense == Tense.PAST:
         tense_form = Tense.PAST
     return generate_japanese_verb_by_str(verb, kind, baseform, polite_form, positive_form, tense_form)
-
-    return generate_japanese_verb_by_str(verb, VerbClass.IRREGULAR, form.baseform)
-
-
 def open_word_data_as_dataframe(index):
     current_path = os.path.abspath(__file__)
     csv_path = os.path.join(os.path.dirname(current_path), '..', 'jlpt', f"n{index}.csv")
     df = pd.read_csv(csv_path)
+    return df
+def get_jlpt_dataframe():
+    df = pd.DataFrame()
+    for i in range(1,5):
+        df = pd.concat([open_word_data_as_dataframe(i), df],ignore_index=True)
     return df
 def save_dataframe(dataframe, index):
     current_path = os.path.abspath(__file__)

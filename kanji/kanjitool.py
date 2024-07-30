@@ -144,6 +144,15 @@ def getOldWordsWithDepth(learning_rate, depth):
 def getOldWordsWithDepthAndShuffle(learning_rate,depth):
     df = getOldWordsWithDepth(learning_rate,depth)
     return df.sample(frac=1).reset_index(drop=True)
+
+def getOldVerb(learning_rate,depth):
+    df = getOldWordsWithDepthAndShuffle(learning_rate,depth)
+    # verb = pd.DataFrame(columns = ["kanji","furigana","meaning","tags","guid","romaji"])
+    verb = pd.DataFrame()
+    for index, row in df.iterrows():
+        if str(row["meaning"]).startswith("to "):
+            verb= pd.concat([verb, pd.DataFrame([row])], ignore_index=True) 
+    return verb
 parser = argparse.ArgumentParser()
 parser.add_argument("-n", "--increment", action="store_true", help="Increment the index by 1")
 parser.add_argument("-p", "--decrement", action="store_true", help="Decrement the index by 1")
@@ -173,3 +182,4 @@ def save_learned_words():
     csv_path = os.path.join(os.path.dirname(current_path), '..', 'resource', 'learned_word.csv')
     learned = getOldWordsWithDepth(10,0)
     learned.to_csv(csv_path, index=False)
+print(getOldVerb(10,0))
