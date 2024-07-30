@@ -182,4 +182,3 @@ def save_learned_words():
     csv_path = os.path.join(os.path.dirname(current_path), '..', 'resource', 'learned_word.csv')
     learned = getOldWordsWithDepth(10,0)
     learned.to_csv(csv_path, index=False)
-print(getOldVerb(10,0))
