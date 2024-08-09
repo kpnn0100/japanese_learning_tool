@@ -11,7 +11,7 @@ import pygame
 import threading
 import sys
 sys.path.append(os.path.join(os.path.dirname(__file__),'..'))
-from tool.tool import *
+# from tool.tool import *
 def speak_japanese(phrase):
     pygame.mixer.init()
     tts = gTTS(text=phrase, lang='ja')
