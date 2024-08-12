@@ -17,5 +17,8 @@ for index, word in today_word_list.iterrows():
     ret = show_question(word['kanji'], word['romaji'], word['meaning'],word['kanji'])
     if ret:
         correct += 1
+    else:
+        print(word)
+        add_word_to_revision(word)
 
 # Rest of your code goes here

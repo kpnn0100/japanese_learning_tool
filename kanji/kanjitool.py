@@ -153,6 +153,20 @@ def getOldVerb(learning_rate,depth):
         if str(row["meaning"]).startswith("to "):
             verb= pd.concat([verb, pd.DataFrame([row])], ignore_index=True) 
     return verb
+def add_word_to_revision(row):
+    current_path = os.path.abspath(__file__)
+
+    # Get the relative path to the CSV file
+    csv_path = os.path.join(os.path.dirname(current_path), '..', 'resource', 'revision.csv')
+
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(csv_path)
+    # check if the word is already in the revision
+    if not df[df['kanji'] == row['kanji']].empty:
+        return
+    #use concat to add the row to the dataframe
+    df = df.append(row, ignore_index=True)
+    df.to_csv(csv_path, index=False)
 parser = argparse.ArgumentParser()
 parser.add_argument("-n", "--increment", action="store_true", help="Increment the index by 1")
 parser.add_argument("-p", "--decrement", action="store_true", help="Decrement the index by 1")

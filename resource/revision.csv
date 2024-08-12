@@ -1,17 +1,3 @@
-kanji,furigana,meaning,tags,guid,romaji
-薄い,うすい,"thin, weak",JLPT JLPT_3 JLPT_5 JLPT_N5,pRrb<$bzH|,usui
-切手,きって,postal (postage) stamps,Genki Genki_Ln.5 Intermediate_Japanese Intermediate_Japanese_Ln.3 JLPT JLPT_5 JLPT_N5,GZ2eU+7^)f,kitte
-～側,～がわ,~ side,JLPT_N5,ks2wGx4U0-,~gawa
-家族,かぞく,"family, members of a family",Genki Genki_Ln.7 Intermediate_Japanese Intermediate_Japanese_Ln.1 JLPT JLPT_5 JLPT_N5,jwBW:Yf?[N,kazoku
-辺,へん,"area, vicinity",JLPT JLPT_5 JLPT_N5,"v^uJ@o,r7C",hen
-欲しい,ほしい,"to want, in need of",JLPT JLPT_5 JLPT_N5,"IB/)D,[pe$",hoshii
-終る,おわる,"to finish, to close",JLPT JLPT_5 JLPT_N5,D_J6!H@vf*,owaru
-痛い,いたい,hurt; painful; sore,Genki Genki_Ln.12 Intermediate_Japanese Intermediate_Japanese_Ln.5 JLPT JLPT_5 JLPT_N5,O@@jk^&oQ8,itai
-～杯,～はい,counter for cupfuls,JLPT JLPT_5 JLPT_N5,JTOz#Az0jW,~hai
-止まる,とまる,to stop; to come to a halt,JLPT JLPT_5 JLPT_N5,Q+OrrzleWd,tomaru
-向こう,むこう,"beyond, over there",JLPT JLPT_5 JLPT_N5,mQG@k1[%|C,mukou
-近い,ちかい,"near, close by, short",Genki Genki_Ln.13 JLPT JLPT_5 JLPT_N5,"ttC.1]n,0|",chikai
-差す,さす,"to raise (stretch out) hands, to raise (e.g., umbrella)",JLPT JLPT_3 JLPT_5 JLPT_N5,b|c|&{UKxH,sasu
-楽しい,たのしい,"enjoyable, fun",Genki Genki_Ln.5 JLPT JLPT_5 JLPT_N5,eD~FeZpJXC,tanoshii
-夜,よる,"evening, night",Genki Genki_Ln.6 JLPT JLPT_3 JLPT_5 JLPT_N5,lj*phUSR[b,yoru
-細い,ほそい,"thin, slender, fine",JLPT JLPT_5 JLPT_N5,zm=f9J*i)W,hosoi
+kanji,furigana,meaning,romaji
+一つ,ひとつ,one thing,hitotsu
+在る,ある,"to be, to have",aru
