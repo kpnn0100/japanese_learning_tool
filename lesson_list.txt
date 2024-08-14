@@ -9,3 +9,5 @@ Kanji Mapper previous : kanji/kanjitool.py -p
 Romaji revision: kanji/Kanji_mapper_old_romaji_test.py
 Forgot word revision : kanji/Kanji_mapper_old_lesson_easy_to_forget_word.py
 Forgot word revision test: kanji/Kanji_mapper_old_lesson_easy_to_forget_word_revision.py
+JLPT next level: kanji/kanjitool.py -u
+JLPT previous level : kanji/kanjitool.py -d
