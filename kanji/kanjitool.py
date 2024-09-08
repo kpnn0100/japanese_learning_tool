@@ -148,7 +148,7 @@ def add_word_to_revision(row):
     if not df[df['kanji'] == row['kanji']].empty:
         return
     #use concat to add the row to the dataframe
-    df = df.append(row, ignore_index=True)
+    df = pd.concat([df, pd.DataFrame([row])], ignore_index=True)
     df.to_csv(csv_path, index=False)
 parser = argparse.ArgumentParser()
 parser.add_argument("-n", "--increment", action="store_true", help="Increment the index by 1")
