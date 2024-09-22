@@ -23,7 +23,7 @@ for index, word in today_word_list.iterrows():
     if total != 0:
         print(f"correct: {correct}, total: {total}, rate: {correct/total}")
     total += 1
-    ret = show_question(new_kanji, word['romaji'], word['meaning'],word['kanji'])
+    ret = show_question(new_kanji, word)
     if ret:
         correct += 1
 

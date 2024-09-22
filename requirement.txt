@@ -1,1 +1,3 @@
 japanese-verb-conjugator-v2
+selenium
+bs4

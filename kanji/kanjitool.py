@@ -30,16 +30,16 @@ def speak_japanese(phrase):
     thread.join()
     pygame.mixer.quit()
     os.remove(audio_file)
-def show_question(show_word, answer_word, meaning, speak_word):
+def show_question(show_word, row):
     print(show_word)
     user_input = input("romaji: ")
     # speak_japanese(speak_word)
-    if user_input == answer_word:
+    if user_input == row['romaji'].values[0]:
         printCorrect()
-        print(meaning)
+        print(f"{row['hanviet'].values[0]} {row['meaning'].values[0]}")
         return True
-    printIncorrect(answer_word)
-    print(meaning)
+    printIncorrect(row['romaji'].values[0])
+    print(f"{row['hanviet'].values[0]} {row['meaning'].values[0]}")
     return False
     
 def printCorrect():

@@ -24,7 +24,7 @@ while True:
         question = row['kanji'].values[0]
     elif mode == 2:
         question = row['meaning'].values[0]
-    show_question(question,row['romaji'].values[0],row['meaning'].values[0],row['kanji'].values[0])
+    show_question(question,row)
     
 
 # Rest of your code goes here
