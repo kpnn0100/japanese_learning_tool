@@ -34,12 +34,12 @@ def show_question(show_word, row):
     print(show_word)
     user_input = input("romaji: ")
     # speak_japanese(speak_word)
-    if user_input == row['romaji'].values[0]:
+    if user_input == row['romaji']:
         printCorrect()
-        print(f"{row['hanviet'].values[0]} {row['meaning'].values[0]}")
+        print(f"{row['hanviet']} {row['meaning']}")
         return True
-    printIncorrect(row['romaji'].values[0])
-    print(f"{row['hanviet'].values[0]} {row['meaning'].values[0]}")
+    printIncorrect(row['romaji'])
+    print(f"{row['hanviet']} {row['meaning']}")
     return False
     
 def printCorrect():
