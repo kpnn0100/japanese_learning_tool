@@ -116,7 +116,7 @@ kanji,furigana,meaning,tags,guid,romaji,hanviet
 西洋,せいよう,"the West, Western countries",JLPT JLPT_N4,CYHizo6/]:,seiyou,TÂY DƯƠNG
 思う,おもう,"to think, to feel",Genki Genki_Ln.8 JLPT JLPT_N4,bu>M]5SnGX,omou,TƯ
 パート (タイム),パート (タイム),part time (esp. female part time employees),JLPT JLPT_N4,v_m4?zP2.9,paato (taimu),
-時代,じだい,"age, period, epoch, era",JLPT JLPT_N4,L?Q&>175XG,jidai,THÌ ĐẠI
+時代,じだい,"age, period, epoch, era",JLPT JLPT_N4,L?Q&>175XG,jidai,THỜI ĐẠI
 申し上げる,もうしあげる,"(humble)to say, to tell",JLPT JLPT_N4,GF+@f2CV$T,moushiageru,
 ～式,～しき,~ ceremony; ~ style,JLPT JLPT_N4,"r&5Ybsff,l",~shiki,THỨC
 出席,しゅっせきする,attendance,JLPT JLPT_N4,veUCYD:#[?,shussekisuru,XUẤT TỊCH
@@ -153,7 +153,7 @@ kanji,furigana,meaning,tags,guid,romaji,hanviet
 いくら～ても,いくら～ても,however much one may ~,JLPT JLPT_N4,I]og(vfh}t,ikura~temo,
 用事,ようじ,business to take care of; tasks; errands,Genki Genki_Ln.12 JLPT JLPT_N4,p$RznpfpCY,youji,DỤNG SỰ
 ビル,ビル,(abbr.) building,JLPT JLPT_N4,H[!Yph0[mz,biru,
-けんかする,けんかする,quarrel,JLPT JLPT_N4,Oc14`ELpiF,kenkasuru,
+喧嘩する,けんかする,quarrel,JLPT JLPT_N4,Oc14`ELpiF,kenkasuru,HUYÊN HOA
 頑張る,がんばる,"to try one's best, to try hard, to persist",Genki Genki_Ln.13 JLPT JLPT_N4,Mz@9d9PizL,ganbaru,
 投げる,なげる,"to pitch, to cast away",Intermediate_Japanese_Ln.7 JLPT JLPT_N4,"A%8%S+mN,O",nageru,ĐẦU
 故障,こしょうする,breakdown,JLPT JLPT_N4,mP~NCidGL7,koshousuru,CỐ CHƯỚNG
@@ -235,7 +235,7 @@ kanji,furigana,meaning,tags,guid,romaji,hanviet
 驚く,おどろく,"to be surprised, to be astonished",Intermediate_Japanese_Ln.8 JLPT JLPT_N4,qBeaklesW+,odoroku,KINH
 頂く,いただく,-- extra-modest expression for たべる and のむ; humble expression for もらう --,Genki Genki_Ln.20 JLPT JLPT_N4,J*KGnzk|Z2,itadaku,ĐỈNH
 祖母,そぼ,grandmother,JLPT JLPT_N4,x!LCLRW]y2,sobo,TỔ MẪU
-場所,ばしょ,"place, location",Genki Genki_Ln.23 Intermediate_Japanese_Ln.5 JLPT JLPT_N4,qw3.O}/lOC,basho,
+場所,ばしょ,"place, location",Genki Genki_Ln.23 Intermediate_Japanese_Ln.5 JLPT JLPT_N4,qw3.O}/lOC,basho,TRƯỜNG SỞ
 答,こたえ,"answer, response",JLPT JLPT_N4,xmTYLgV-T_,kotae,ĐÁP
 もちろん,もちろん,"certainly, of course",Genki Genki_Ln.7 Intermediate_Japanese_Ln.5 JLPT JLPT_N4,"m8,NutV2dG",mochiron,
 漬ける,つける,"to soak, to moisten, to pickle",JLPT JLPT_N4,h!i?H{d*F@,tsukeru,TÍ
@@ -244,7 +244,7 @@ kanji,furigana,meaning,tags,guid,romaji,hanviet
 スクリーン,スクリーン,screen,JLPT JLPT_N4,"L/njBN,iH6",sukuriin,
 増える,ふえる,"to increase, to multiply",JLPT JLPT_N4,QW.w#0qn}8,fueru,TĂNG
 または,または,"or, otherwise",JLPT JLPT_N4,J-^^Uw<Tl~,mataha,
-けがする,けがする,"injury (to animate object), hurt",JLPT JLPT_N4,NP:|wpXW(M,kegasuru,
+怪我する,けがする,"injury (to animate object), hurt",JLPT JLPT_N4,NP:|wpXW(M,kegasuru,QUÁI NGÃ
 以下,いか,"less than, below",JLPT JLPT_N4,DS5y_+4p`Y,ika,DĨ HẠ
 選ぶ,えらぶ,to choose; to select,Genki Genki_Ln.17 Intermediate_Japanese_Ln.3 JLPT JLPT_N4,Jo*`4U5e.W,erabu,TUYỂN
 ～ばかり,～ばかり,"just did ~, only",JLPT JLPT_N4,vbW68h-IIc,~bakari,
@@ -427,7 +427,7 @@ kanji,furigana,meaning,tags,guid,romaji,hanviet
 大体,だいたい,approximately; in most cases; in general; to begin with (same as もともと),Intermediate_Japanese_Ln.15 Intermediate_Japanese_Ln.3 JLPT JLPT_N4,PoQwq(:pGi,daitai,ĐẠI THỂ
 折れる,おれる,"to break, to be folded, to give in; to turn (a corner)",JLPT JLPT_N4,"C>N,+q5aTm",oreru,CHIẾT
 正しい,ただしい,correct,JLPT JLPT_N4,ynVxN8fR|I,tadashii,CHÁNH
-輸入,ゆにゅう,import,JLPT JLPT_N4,c#?sbZfFpt,yunyuu,THÂU NHẬP
+輸入,ゆにゅう,import,JLPT JLPT_N4,c#?sbZfFpt,yunyuu,DU NHẬP
 返事,へんじ,"reply, answer",JLPT JLPT_N4,KqUGjMWU_#,henji,PHẢN SỰ
 都,と,metropolitan,JLPT JLPT_N4,OcM{?!kX-7,to,ĐÔ
 産業,さんぎょう,industry,JLPT JLPT_N4,r<I`MSX5aQ,sangyou,SẢN NGHIỆP

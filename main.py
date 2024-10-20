@@ -11,7 +11,7 @@ def execute_tool(tool_path):
         print("Exiting the program.")
         exit()
     else:
-        os.system(f"python {tool_path}")
+        os.system(f"python3 {tool_path}")
 
 def load_menu_options(file_path):
     menu_options = []
