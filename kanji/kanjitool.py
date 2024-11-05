@@ -39,7 +39,7 @@ def show_question(show_word, row):
         print(f"{row['hanviet']} {row['meaning']}")
         return True
     printIncorrect(row['romaji'])
-    print(f"{row['hanviet']} {row['meaning']}")
+    print(f"{row['hanviet']} {row['kanji']} {row['meaning']}")
     return False
     
 def printCorrect():
