@@ -36,7 +36,7 @@ def show_question(show_word, row):
     # speak_japanese(speak_word)
     if user_input == row['romaji']:
         printCorrect()
-        print(f"{row['hanviet']} {row['meaning']}")
+        print(f"{row['hanviet']} {row['kanji']} {row['meaning']}")
         return True
     printIncorrect(row['romaji'])
     print(f"{row['hanviet']} {row['kanji']} {row['meaning']}")
