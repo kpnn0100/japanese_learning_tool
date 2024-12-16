@@ -72,7 +72,7 @@ def getShuffledKanjiDataFrame():
     df = df.drop(columns=['guid'])
     df.loc[df["kanji"] == " ", "kanji"] = df["furigana"]
     # Shuffle the DataFrame with a fixed seed
-    shuffled_df = df.sample(frac=1, random_state=41).reset_index(drop=True)
+    shuffled_df = df.sample(frac=1, random_state=40).reset_index(drop=True)
 
     return shuffled_df
 def processIndexAndLevel():
