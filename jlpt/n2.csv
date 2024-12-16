@@ -22,7 +22,7 @@ kanji,furigana,meaning,tags,guid,romaji,hanviet
 ～感,～かん,"feeling, sense, impression",JLPT JLPT_2,gv?{M:3Nl+,~kan,CẢM
 ～期,～き,"~age, ~period",JLPT JLPT_2,kCfW%K6Q|D,~ki,KÌ
 ～器,～き,"device, equipment",JLPT JLPT_2,u+~Y!_LNSC,~ki,KHÍ
-～機,～き,machine,JLPT JLPT_2,k3|o@N56?1,~ki,KI
+～機,～き,machine,JLPT JLPT_2,k3|o@N56?1,~ki,CƠ
 ～気味,～ぎみ,slightly ~,JLPT JLPT_2,H[Vo.[BxaR,~gimi,KHÍ VỊ
 ～教,～きょう,religion,JLPT JLPT_2,"vbb{{,/z36",~kyou,
 ～行,～ぎょう,"line, row",JLPT JLPT_2,E5TA@2@XRb,~gyou,HÀNH
@@ -476,7 +476,7 @@ kanji,furigana,meaning,tags,guid,romaji,hanviet
 気圧,きあつ,atmospheric pressure,JLPT JLPT_2,w71unwo/e>,kiatsu,KHÍ ÁP
 着替え,きがえ,"changing clothes, change of clothes",JLPT JLPT_2,vi{&DRUjwE,kigae,TRỨ THẾ
 着替える,きがえる,to change (one's) clothes,JLPT Intermediate_Japanese JLPT_2 Genki Intermediate_Japanese_Ln.10 Genki_Ln.21,"Az6,#K9!yB",kigaeru,TRỨ THẾ
-機関車,きかんしゃ,"locomotive, engine",JLPT JLPT_2,dyq%>=g>@K,kikansha,KI QUAN XA
+機関車,きかんしゃ,"locomotive, engine",JLPT JLPT_2,dyq%>=g>@K,kikansha,CƠ QUAN XA
 飢饉,ききん,famine,JLPT JLPT_2,of0kMjM40p,kikin,CƠ CẬN
 器具,きぐ,instrument,JLPT JLPT_2,f04oZ+_FOX,kigu,KHÍ CỤ
 期限,きげん,"term, period, time frame time limit, deadline, cutoff (date)",JLPT JLPT_2,"hwqzFcU1,$",kigen,KÌ HẠN
@@ -631,7 +631,7 @@ kanji,furigana,meaning,tags,guid,romaji,hanviet
 交替,こうたい,"change, relief, alteration",JLPT JLPT_2,MK%iQJeoa*,koutai,GIAO THẾ
 交代,こうたい,"alternation, change, relief, relay, shift, substitution (sports, etc.), taking turns",JLPT JLPT_2,f~GJ18sE+w,koutai,GIAO ĐẠI
 耕地,こうち,arable land,JLPT JLPT_2,k*|BtPi.!l,kouchi,CANH ĐỊA
-交通機関,こうつうきかん,transportation facilities,JLPT JLPT_2,uNV6#=3}0=,koutsuukikan,GIAO THÔNG KI QUAN
+交通機関,こうつうきかん,transportation facilities,JLPT JLPT_2,uNV6#=3}0=,koutsuukikan,GIAO THÔNG CƠ QUAN
 校庭,こうてい,school yard,JLPT JLPT_2,w[Wu+:]Zss,koutei,GIÁO ĐÌNH
 肯定,こうてい,"positive, affirmation",JLPT JLPT_2,oZ3[Bf(H{{,koutei,KHẲNG ĐỊNH
 高度,こうど,"altitude, height; advanced",JLPT JLPT_2,CQAS#*&&=/,koudo,CAO ĐỘ
@@ -1039,7 +1039,7 @@ kanji,furigana,meaning,tags,guid,romaji,hanviet
 宣伝,せんでん,"publicity, advertisement, advertising, propaganda",JLPT JLPT_2,G}7n;$pW3b,senden,TUYÊN TRUYỀN
 先頭,せんとう,"head, lead, vanguard",JLPT JLPT_2,h9$H7YGNw$,sentou,TIÊN ĐẦU
 全般,ぜんぱん,"(the) whole, general",JLPT JLPT_2,KNd2446a(;,zenpan,TOÀN BÀN
-扇風機,せんぷうき,electric fan,JLPT JLPT_2,bRk!KDE*$7,senpuuki,PHIẾN PHONG KI
+扇風機,せんぷうき,electric fan,JLPT JLPT_2,bRk!KDE*$7,senpuuki,PHIẾN PHONG CƠ
 洗面,せんめん,"wash up (one's face), have a wash",JLPT JLPT_2,C?dX|!4c7/,senmen,TẨY DIỆN
 全力,ぜんりょく,"all one's power, whole energy",JLPT JLPT_2,j*AhcD}311,zenryoku,TOÀN LỰC
 線路,せんろ,"line, track, roadbed",JLPT JLPT_2,mq#-qSUuS*,senro,TUYẾN LỘ
